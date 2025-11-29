@@ -12,6 +12,9 @@ nav{
     justify-content: space-between;
     border-bottom: black 1px solid;
     gap: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo h1{
@@ -51,12 +54,59 @@ nav{
     justify-content:space-evenly;
     
 }
+.icon .logos{
+    /* background-color: aqua; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.icon .logos i{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+}
+.icon .logos i p{
+    font-size: 10px;
+    color: rgb(187, 55, 189);
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .icon .links a{
+    /* color: #000; */
+    color: rgb(187, 55, 189);
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+.icon .links .my_learning {
     /* color: #000;
      */
      
      color:  rgb(187, 55, 189);
      text-decoration: none;
+     position: relative;
+     cursor: pointer;
+}
+.icon .links .my_learning .pop_up{
+    width: 150px;
+    height: auto;
+    background-color: white;
+    color: black;
+    position: absolute;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+}
+.icon .links .my_learning:hover .pop_up{
+    display: block;
 }
 .icon .links{
      display: flex;
@@ -72,8 +122,7 @@ nav{
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
-    /* font-size: medium; */
-    /* font-family: 'Times New Roman', Times, serif; */
+    
 
 }
 .catogory{
@@ -104,6 +153,21 @@ nav{
     background-color: rgb(185, 185, 50);
     color: #000;
     transition: 300ms;
+}
+.banner{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.banner .box{
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    left: 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
 }
 .banner img{
     width: 100%;
