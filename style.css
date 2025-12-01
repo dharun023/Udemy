@@ -189,9 +189,15 @@ nav{
         transform: translateY(0);
     }
 }
-.banner img{
+.banner .l_img img{
     width: 100%;
     height: 70vh;
+    margin-top: 10px;
+}
+.banner .m_img img{
+    display: none;
+    width: 100%;
+    height: 40vh;
     margin-top: 10px;
 }
 .course_card{
@@ -373,6 +379,9 @@ footer{
     .logos i p{
         display: none;
     }
+    img1{
+        display: none;
+    }
     .box{
         width: 60%;
         top: 10%;
@@ -460,10 +469,18 @@ footer{
         padding: 20px;
         font-size: 12px;
     }
+    .banner h1{
+        display: none;
+    }
     .banner .box p{
         display: none;
     }
-    
+    .banner .l_img img{
+        display: none;
+    }
+    .banner .m_img img{
+        display: block;
+    }
     .course_card .catogory_courses{
         height: auto;
         overflow-x: scroll;
