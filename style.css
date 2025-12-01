@@ -168,6 +168,18 @@ nav{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 40px;
     border-radius: 10px;
+    animation: lbox 2s ease-out 1ms 1 normal forwards;
+
+}
+@keyframes lbox {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .banner img{
     width: 100%;
